@@ -92,8 +92,9 @@ body {
 
 @media (min-width: 375px) {
     .card {
-        flex-direction: row;
-        max-width: 620px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 575px;
     }
 
     .card-image img {
@@ -102,11 +103,14 @@ body {
     }
 
     .card-content {
-        width: 65%;
-        padding: 30px 40px;
+        padding: 30px 35px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .product-title {
+        line-height: 1;
     }
 }
